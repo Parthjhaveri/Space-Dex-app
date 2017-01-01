@@ -961,31 +961,6 @@ input:focus {outline: none;}
   border: 1px solid black;
 }
 
-.info {
-  font-family: 'Roboto', sans-serif;
-  width: auto;
-  height: 250px;
-  background-color: #1a1a1a;
-  margin-top: -50px;
-  color: white;
-}
-
-/* ------------------------------INFO RESPONSIVENESS---------------------------------- */
-@media only screen and (max-width: 900px) {
-
-  .info {
-    padding: 10px;
-    height: auto;
-    width: auto;
-  }
-
-}
-/* --------------------------------INFO RESPONSIVENESS-------------------------------- */
-
-#liveheading {
-  padding-top: 140px;
-}
-
 .videoDiv {
   width: auto;
   height: 500px;
@@ -1031,6 +1006,161 @@ input:focus {outline: none;}
 #courtspan {
   color: red;
   padding-right: 10px;
+}
+
+.liveheader {
+  width: auto;
+  height: 700px;
+  background-color: white;
+  padding-top: 20%;
+  color: red;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bolder;
+  font-size: 55px;
+  background-image: url(https://lh4.ggpht.com/uwYqKtZXdx0K8LOn78bB6U0ivoe1toWUruWmgJqbT6p4dcFlafgQFlyhwnNWNCTeCy0=h900);
+  background-size: 100%;
+  background-position: center center;
+}
+
+#headerwrap {
+  background-color: white;
+  padding: 5px;
+  padding-left: 50px;
+  padding-right: 50px;
+  opacity: 0.7;
+}
+
+#liveheading {
+  padding-top: 50px;
+  color: white;
+  font-weight: bolder;
+}
+
+.info {
+  font-family: 'Roboto', sans-serif;
+  width: auto;
+  height: auto;
+  background-color: #1a1a1a;
+  color: white;
+  margin-top: -2px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.latlongtable {
+  width: 80%;
+  height: 100px;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.tablebody {
+  color: white;
+  text-align: center;
+}
+
+.tablerows {
+  border: 1px solid red;
+}
+
+.tablehead {
+  border: 1px solid red;
+  text-align: center;
+  font-size: 22px;
+}
+
+.tabledata {
+  border: 1px solid red;
+  text-align: center;
+}
+
+.sstext {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  line-height: 2em;
+  text-align: left;
+  margin-top: 50px;
+}
+
+/* ------ MEDIA QUERY FOR LIVE HEADER ------ */
+
+@media only screen and (max-width: 1200px) {
+
+  .liveheader {
+    background-image: none;
+  }
+
+  #headerwrap {
+    padding-left: 0px;
+    padding-right: 0px;
+    opacity: 1;
+    background-color: #1a1a1a;
+    color: white;
+  }
+
+  #liveheading {
+    padding-top: 50px;
+    color: red;
+    font-weight: bolder;
+  }
+}
+/* ------ END MEDIA QUERY FOR LIVE HEADER ------ */
+
+/* ---- MAP ----- */
+
+#mapid { 
+  margin-top: 50px;
+  width: 80%;
+  height: 400px; 
+}
+
+
+/*----- END MAP ---*/
+
+.whosupthere {
+  width: auto;
+  height: auto;
+  background-color: white;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  color: #1a1a1a;
+  font-family: 'Roboto', sans-serif;
+}
+
+#currentlytext {
+  font-size: 25px;
+  margin-top: 10%;
+}
+
+#six {
+  color: red;
+}
+
+#currentlyleft{
+  padding: 40px;
+}
+
+#currentlyright{
+  padding: 40px;
+}
+
+.astlist {
+  list-style: none;
+  line-height: 2em;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.astname {
+  transition: 0.4s;
+}
+
+.astname:hover {
+  font-size: 21px;
+  transition: 0.4s;
 }
 
 /* --------------------------------------------------------------------------------------------------------------- */
