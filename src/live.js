@@ -198,12 +198,12 @@ var LiveEarth = React.createClass({
 						  <div className="col-md-6" id="currentlyright">
 						  	<center>
 						  		<ul className="astlist">
-						  			<li><span className="astname">{this.state.astOne}</span></li>
-						  			<li><span className="astname">{this.state.astTwo}</span></li>
-						  			<li><span className="astname">{this.state.astThree}</span></li>
-						  			<li><span className="astname">{this.state.astFour}</span></li>
-						  			<li><span className="astname">{this.state.astFive}</span></li>
-						  			<li><span className="astname">{this.state.astSix}</span></li>
+						  			<a href="https://www.nasa.gov/mission_pages/station/expeditions/expedition50/index.html" target="_blank"><li><span className="astname">{this.state.astOne}</span></li></a>
+						  			<a href="https://www.nasa.gov/mission_pages/station/expeditions/expedition50/index.html" target="_blank"><li><span className="astname">{this.state.astTwo}</span></li></a>
+						  			<a href="https://www.nasa.gov/mission_pages/station/expeditions/expedition50/index.html" target="_blank"><li><span className="astname">{this.state.astThree}</span></li></a>
+						  			<a href="https://www.nasa.gov/mission_pages/station/expeditions/expedition50/index.html" target="_blank"><li><span className="astname">{this.state.astFour}</span></li></a>
+						  			<a href="https://www.nasa.gov/mission_pages/station/expeditions/expedition50/index.html" target="_blank"><li><span className="astname">{this.state.astFive}</span></li></a>
+						  			<a href="https://www.nasa.gov/mission_pages/station/expeditions/expedition50/index.html" target="_blank"><li><span className="astname">{this.state.astSix}</span></li></a>
 						  		</ul>
 						  	</center>
 						  </div>
@@ -219,7 +219,7 @@ var LiveEarth = React.createClass({
 
 				<div className="whatisit">
 					<div className="container">
-
+						<center><h1>Okay, but what <strong>really</strong> is the International Space Station all about?</h1></center>
 					</div>
 				</div>
 

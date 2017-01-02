@@ -166,7 +166,10 @@ html, body {
   margin-right: 50px;
   margin-top: 15px;
   width: 60px;
+}
 
+#spacespace {
+  margin-right: 10px;
 }
 
 #mainbanner {
@@ -1156,11 +1159,12 @@ input:focus {outline: none;}
 
 .astname {
   transition: 0.4s;
+  color: black;
 }
 
 .astname:hover {
-  font-size: 21px;
-  transition: 0.4s;
+  cursor: pointer;
+  color: red;
 }
 
 .whatisit {
@@ -1404,6 +1408,185 @@ input:focus {outline: none;}
   font-family: 'Roboto', sans-serif;
 }
 
+/* ------------------------------------------------------------------------------------------------------------------ */
+/* --------------------------------------------- DISCUSS COMPONENT CSS ---------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------ */
+
+.discussdiv {
+  width: auto;
+  height: auto;
+  background-color: white;
+  padding-top: 50px;
+  padding-bottom: 100px;
+  color: #1a1a1a;
+  font-family: 'Roboto', sans-serif;
+}
+
+#discussLeft {
+   padding-top: 40px;
+   padding-bottom: 40px; 
+}
+
+#discussRight {
+   padding-top: 40px;
+   padding-bottom: 40px; 
+}
+
+.nameinput {
+  width: 85%;
+  height: 35px;
+  border: 1px solid black;
+  background-color: white;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 18px;
+  display: block;
+  margin-top: 10px;
+}
+
+.emailinput{
+  width: 85%;
+  height: 35px;
+  border: 1px solid black;
+  background-color: white;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 18px;
+  margin-top: 20px;
+  display: block;
+}
+
+#entercomment{
+  width: 85%;
+  height: 100px;
+  border: 1px solid black;
+  background-color: white;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 18px;
+  display: block;
+  margin-top: 20px;
+}
+
+.submitbutton {
+  width: 100px;
+  height: 35px;
+  border: 1px solid #4E387E;
+  font-weight: bolder;
+  background-color: #4E387E;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 18px;
+  display: block;
+  margin-top: 20px;
+  transition: 0.4s;
+}
+
+.submitbutton:hover {
+  background-color: red;
+  color: white;
+  font-weight: bolder;
+  transition: 0.4s;
+  border: 1px solid red;
+}
+
+.submitbutton:focus {outline: none;}
+
+.rocket {
+  width: auto;
+  height: 400px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+#join {
+  font-size: 50px;
+}
+
+#downarrow {
+  font-size: 40px;
+  margin-top: 20px;
+}
+
+#discussRightbox {
+  border: 2px solid black;
+  margin-top: 20px;
+  padding: 30px;
+  font-family: 'Roboto', sans-serif;
+  overflow-y: scroll;
+  border-radius: 5px;
+}
+
+#namehr {
+  width: 100%;
+  border: 1px solid black;
+}
+
+.postdiv {
+  padding: 10px;
+  border: 1px solid silver;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 
 
+
+/* ------------------- DISCUSS DIV MEDIA QUERY ------------------------ */
+
+@media only screen and (max-width: 800px) {
+
+  .discussdiv {
+      padding-bottom: 100px;
+  }
+
+  #join {
+    margin-top: -100px;
+  }
+
+  .rocket {
+    margin-top: 50px;
+  }
+
+  .html, body {
+    background-image: none;
+  }
+
+  .nameinput {
+    width: 100%;
+  }
+
+  .emailinput {
+    width: 100%;
+  }
+
+  #entercomment {
+    width: 100%;
+  }
+
+  .submitbutton {
+    justify-content: center;
+  }
+
+  #discussRightbox {
+    border: 2px solid black;
+    margin-top: -40px;
+    padding: 20px;
+  }
+
+}
+
+/* ---------------- END DISCUSS DIV MEDIA QUERY ------------------------ */
+
+.formform {
+  padding: 20px;
+  border: 2px solid white;
+  transition: 0.4s;
+}
+
+.formform:hover {
+  border: 2px solid red;
+  border-radius: 10px;
+  transition: 0.4s;
+}
 

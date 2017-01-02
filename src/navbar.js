@@ -64,7 +64,8 @@ var Navbar = React.createClass({
 		        <ul className="navlist">
 		        	<li className="listitem"><Link to="/asteroids" className="links">ASTEROIDS</Link></li>
 		        	<li className="listitem"><Link to="/mars" className="links">MARS</Link></li>
-		        	<li className="listitem"><Link to="/live" className="links">LIVE</Link></li>
+		        	<li className="listitem"><Link to="/live" className="links"><span id="spacespace">SPACE</span>STATION</Link></li>
+		        	<li className="listitem"><Link to="/discuss" className="links">DISCUSS</Link></li>
 		        	<h1 className="closenav" onClick={this.closenavbar}>X</h1>
 		        </ul>
 	          </center>

@@ -9,8 +9,10 @@ import Asteroids from './asteroids.js';
 import Mars from './mars.js';
 import LiveEarth from './live.js';
 import Sounds from './sounds.js';
-import Footer from './footer.js'
-import Searchbox from './search.jsx'
+import Footer from './footer.js';
+import Searchbox from './search.jsx';
+import Discuss from './discuss.jsx';
+
 import { IndexRoute,Link, Router, Route, browserHistory } from 'react-router';
 var $ = require('jquery');
 
@@ -39,6 +41,7 @@ ReactDOM.render(
       <Route path='/mars' component={Mars} />
       <Route path='/live' component={LiveEarth} />
       <Route path='/sounds' component={Sounds} />
+      <Route path='/discuss' component={Discuss} />
     </Route>
   </Router>,
   document.getElementById('root')
