@@ -59,21 +59,21 @@ var LiveEarth = React.createClass({
 		})
 
 		var mymap = L.map('mapid').setView([this.state.lat, this.state.long], 13);
-
+		// new Map(options: Object)
 		L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/dark-v9/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoicGFydGhqaGF2ZXJpIiwiYSI6ImNpeGNxNWN6azAwYXMyeWxmb2kzZHFuaHUifQ.IEhU6FLL_DdjRAQ1VD_PSA', {
 		    attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
-		    maxZoom: 18,
+		    maxZoom: 30,
 		    accessToken: 'pk.eyJ1IjoicGFydGhqaGF2ZXJpIiwiYSI6ImNpeGNxNWN6azAwYXMyeWxmb2kzZHFuaHUifQ.IEhU6FLL_DdjRAQ1VD_PSA'
 		}).addTo(mymap);
 
-		map.addControl(new mapboxgl.GeolocateControl({
-		    positionOptions: {
-		        enableHighAccuracy: true
-		    }
-		}));
+		// map.addControl(new mapboxgl.GeolocateControl({
+		//     positionOptions: {
+		//         enableHighAccuracy: true
+		//     }
+		// }));
 
-		var nav = new mapboxgl.NavigationControl();
-		map.addControl(nav, 'top-left');
+		// var nav = new mapboxgl.NavigationControl();
+		// map.addControl(nav, 'top-left');
 
 		// var map = new mapboxgl.Map({
 		//     container: 'map', // container id
@@ -82,20 +82,22 @@ var LiveEarth = React.createClass({
 		//     zoom: 3 // starting zoom
 		// });
 
+	 
+	var track = (function moveISS () {
+	    $.getJSON('http://api.open-notify.org/iss-now.json?', function(data) {
+	        var lat = data['iss_position']['latitude'];
+	        var lon = data['iss_position']['longitude'];
 
-		// function moveISS () {
-		//     $.getJSON('http://api.open-notify.org/iss-now.json?callback=?', function(data) {
-		//         var lat = data['iss_position']['latitude'];
-		//         var lon = data['iss_position']['longitude'];
+	        // See leaflet docs for setting up icons and map layers
+	        // The update to the map is done here:
+	        iss.setLatLng([lat, lon]);
+	        isscirc.setLatLng([lat, lon]);
+	        map.panTo([lat, lon], animate=true);
+	    });
+	    setTimeout(moveISS, 5000); 
+	})
 
-		//         // See leaflet docs for setting up icons and map layers
-		//         // The update to the map is done here:
-		//         iss.setLatLng([lat, lon]);
-		//         isscirc.setLatLng([lat, lon]);
-		//         map.panTo([lat, lon], animate=true);
-		//     });
-		//     setTimeout(moveISS, 5000); 
-		// }
+	console.log(track)
 
 	},
 
@@ -126,12 +128,17 @@ var LiveEarth = React.createClass({
 						  			// THIS IS WHERE THE MAP WILL BE
 						  		}
 
-						  		 <div id="mapid">
-							  		 {
-							  		 	this.mymap
-							  		 }
-						  		 </div>
+						  		{
+						  		 // <div id="mapid">
+						  		 // 	{
+						  		 // 		this.track
+						  		 // 	}
+						  		 // </div>
+						  		}
 
+						  		<div className="framewrapper">
+						  			<iframe src="http://open-notify.org/Open-Notify-API/" className="trackframe"></iframe>
+						  		</div>
 
 						  </div>
 
@@ -158,8 +165,8 @@ var LiveEarth = React.createClass({
 						  		<br />
 
 						  		<p className="sstext">
-						  			The table above in conjuction with the Map<br />
-						  			are current trajectories of where the International Space Station is <br />
+						  			The table above in conjuction with the Map
+						  			are current trajectories of where the International Space Station is 
 						  			above us in orbit.
 						  		</p>
 						  </div>
@@ -184,7 +191,7 @@ var LiveEarth = React.createClass({
 						  <div className="col-md-6" id="currentlyleft">
 						  	<p id="currentlytext">
 						  		Currently, there are a total of <span id="six"><strong>6</strong></span> Astronauts up in
-						  		the International Space Station, from varying Space Agencies around the World.
+						  		the International Space Station- from varying Space Agencies around the World.
 						  	</p>
 						  </div>
 						  
@@ -207,7 +214,13 @@ var LiveEarth = React.createClass({
 				</div>
 
 
+				<center><img src="https://bdn-data.s3.amazonaws.com/blogs.dir/344/files/2015/10/iss.jpeg" className="img-responsive" role="presentation" /></center>
 
+				<div className="whatisit">
+					<div className="container">
+
+					</div>
+				</div>
 
 			</div>
 		)

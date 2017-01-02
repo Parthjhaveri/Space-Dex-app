@@ -1124,14 +1124,14 @@ input:focus {outline: none;}
   width: auto;
   height: auto;
   background-color: white;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   color: #1a1a1a;
   font-family: 'Roboto', sans-serif;
 }
 
 #currentlytext {
-  font-size: 25px;
+  font-size: 30px;
   margin-top: 10%;
 }
 
@@ -1161,6 +1161,31 @@ input:focus {outline: none;}
 .astname:hover {
   font-size: 21px;
   transition: 0.4s;
+}
+
+.whatisit {
+  width: auto;
+  height: 400px;
+  background-color: #4E387E;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+.framewrapper {
+  width: 85%;
+  height: 300px;
+  overflow: hidden;
+  margin-top: 50px;
+}
+
+.trackframe {
+ position : relative;
+    top      : -400px;
+    left     : -500px;
+    width    : 1280px;
+    height   : 1200px;
 }
 
 /* --------------------------------------------------------------------------------------------------------------- */
