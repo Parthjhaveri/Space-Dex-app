@@ -167,7 +167,7 @@ var LiveEarth = React.createClass({
 						  		<p className="sstext">
 						  			The table above in conjuction with the Map
 						  			are current trajectories of where the International Space Station is 
-						  			above us in orbit.
+						  			above us in orbit. <p><em>(<strong>Credit</strong>- <a href="http://open-notify.org/Open-Notify-API/" target="_blank">Open Notify</a>)</em></p>
 						  		</p>
 						  </div>
 
@@ -213,8 +213,9 @@ var LiveEarth = React.createClass({
 
 				</div>
 
-
-				<center><img src="https://bdn-data.s3.amazonaws.com/blogs.dir/344/files/2015/10/iss.jpeg" className="img-responsive" role="presentation" /></center>
+				<div className="imagediv">
+					<center><img src="https://static.pexels.com/photos/23870/pexels-photo.jpg" className="img-responsive" role="presentation" /></center>
+				</div>
 
 				<div className="whatisit">
 					<div className="container">

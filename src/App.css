@@ -1017,7 +1017,7 @@ input:focus {outline: none;}
   font-family: 'Roboto', sans-serif;
   font-weight: bolder;
   font-size: 55px;
-  background-image: url(https://lh4.ggpht.com/uwYqKtZXdx0K8LOn78bB6U0ivoe1toWUruWmgJqbT6p4dcFlafgQFlyhwnNWNCTeCy0=h900);
+  background-image: url(https://static.pexels.com/photos/5439/earth-space.jpg);
   background-size: 100%;
   background-position: center center;
 }
@@ -1027,7 +1027,7 @@ input:focus {outline: none;}
   padding: 5px;
   padding-left: 50px;
   padding-right: 50px;
-  opacity: 0.7;
+  opacity: 0.9;
 }
 
 #liveheading {
@@ -1187,6 +1187,20 @@ input:focus {outline: none;}
     width    : 1280px;
     height   : 1200px;
 }
+
+.imagediv {
+  width: auto;
+  height: 400px;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 700px) {
+  
+  .imagediv {
+    display: none;
+  }
+
+} 
 
 /* --------------------------------------------------------------------------------------------------------------- */
 /* ---------------------------------------------- SOUNDS COMPONENT CSS ------------------------------------------- */
