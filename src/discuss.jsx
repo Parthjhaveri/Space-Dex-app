@@ -9,6 +9,51 @@ var $ = require('jquery');
 
 
 var Discuss = React.createClass({
+
+	//-------------- THIS CREATES A NEW POST ---------------
+
+	// GET THE INITIAL STATE
+	getInitialState() {
+		return({author: '', email: '', indpost: '', posts: []})
+	},
+
+	// COMPONENT DID MOUNT TO LOAD THE EXISTING POSTS FROM THE DATABASE
+	componentDidMount() {
+
+		// API CALL TO GET THE POSTS FROM THE DATABASE
+	    $.ajax({
+	      url: '/discuss?',
+	      type: 'GET'
+	    })
+	    .done((data) => {
+	      console.log('ajax data from PostsList',data)
+	      this.setState({posts: data});
+	    })
+	},
+
+	// HANDLE CHANGE
+	 handleChange(input) {
+	    this.setState({author: input.target.value, email: input.target.value, indpost: input.target.value})
+	    
+	    console.log(this.state.author)
+	    console.log(this.state.email)
+	    console.log(this.state.indpost)
+	  },
+
+	// SUBMIT A NEW POST
+	  newPost() {
+	    $.ajax({
+	      url: '/new-post',
+	      type: 'POST',
+	      data: {
+	        author: this.state.author,
+	        email: this.state.email,
+	        post: this.state.body
+	      }
+	    })
+	  },
+
+	// THE RENDER FUNCTION
 	render: function() {
 		return (
 			<div>
@@ -27,14 +72,14 @@ var Discuss = React.createClass({
 						  <div className="col-md-6" id="discussLeft">
 						  	
 						  	<form className="formform">
-						  		<input type="text" placeholder="Enter your name..." className="nameinput" />
+						  		<input type="text" placeholder="Enter your name..." className="nameinput" onChange={this.handleChange}/>
 						  		
-						  		<input type="text" placeholder="E-Mail address" className="emailinput" />	
+						  		<input type="text" placeholder="E-Mail address" className="emailinput" onChange={this.handleChange}/>	
 						  	
+						  		<h4><strong>Comment:</strong></h4>
+						  		<textarea type="text" onChange={this.handleChange} id="entercomment" className="expanding"/>
 
-						  		<input type="text" placeholder="Feel free to write a comment!" id="entercomment" maxlength="10" className="expanding"/>
-
-						  		<button className="submitbutton">Submit</button>
+						  		<button className="submitbutton" onClick={this.newPost}>Submit</button>
 						  	</form>
 
 						  </div>
@@ -42,16 +87,25 @@ var Discuss = React.createClass({
 						  <div className="col-md-6" id="discussRight">
 						  	<div id="discussRightbox">
 
-						  		<div className="postdiv">
-							  		<h3>Name</h3>
-							  		<hr id="namehr" />
-							  		<h4>This is going to be the post</h4>
-						  		</div>
+						  		{
+						  			// SAMPLE POST ----------------------
+						  		}
 
 						  		<div className="postdiv">
-							  		<h3>{}</h3>
+							  		<h3><strong>Sample name</strong></h3>
+							  		<h5><em>Sample@Email.com</em></h5>
 							  		<hr id="namehr" />
-							  		<h4>{}</h4>
+							  		<h4>This is a sample post</h4>
+						  		</div>
+
+						  		{
+						  			// DYNAMIC POSTS --------------------
+						  		}
+
+						  		<div className="postdiv">
+							  		<h3>{this.state.name}</h3>
+							  		<hr id="namehr" />
+							  		<h4>{this.state.indpost}</h4>
 						  		</div>
 
 						  	</div>
