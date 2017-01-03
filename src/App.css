@@ -70,6 +70,16 @@ html, body {
   margin-top: 20px;
 }
 
+.homedivbanner {
+  width: auto;
+  height: 400px;
+  overflow: hidden;
+}
+
+#mainbanner {
+  margin-top: -220px;
+}
+
 .box {
   width: 300px;
   height: 300px;
@@ -157,6 +167,13 @@ html, body {
       height: 250px;
       width: 250px;
     }
+
+    .homedivbanner {
+      width: auto;
+      height: 300px;
+      overflow: hidden;
+
+    }
 }
 
 
@@ -170,10 +187,6 @@ html, body {
 
 #spacespace {
   margin-right: 10px;
-}
-
-#mainbanner {
-  margin-top: 0px;
 }
 
 

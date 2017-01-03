@@ -33,32 +33,48 @@ var Discuss = React.createClass({
 
 	// HANDLE CHANGE
 	 handleChange(input) {
-	    // this.setState({author: input.target.value, email: input.target.value, indpost: input.target.value})
-	    
-	    console.log(this.state.author)
-	    console.log(this.state.email)
-	    console.log(this.state.indpost)
+	    this.setState({author: input.target.value})
 
-	    // STORE THE AUTHOR, EMAIL AND INDIVIDUAL POST IN A VARIABLE	
+	    // STORE THE AUTHOR IN VARIABLE	
 	    var authorName = this.state.author;
-	    var emailAddress = this.state.email;
-	    var individualPost = this.state.indpost;
 
 	    // SET THE STATE
-	    this.setState({author: authorName, email: emailAddress, indpost: individualPost})
+	    this.setState({author: input.target.value})
 
 	  },
+
+	// HANDLE CHANGE FOR EMAIL
+	handleChangeEmail(e) {
+		
+		this.setState({email: e.target.value})
+
+		// STORE THE EMAIL IN VARIABLE
+		var emailAddress = this.state.email;
+
+		this.setState({email: e.target.value})
+	},
+
+	// HANDLE CHANGE FOR POST
+	handleChangePost(event) {
+		
+		this.setState({indpost: event.target.value})
+
+		// STORE THE INDIVIDUAL POST IN VARIABLE
+		var individualPost = this.state.indpost;
+
+		this.setState({indpost: event.target.value})
+	},
 
 
 	// SUBMIT A NEW POST
 	  newPost() {
 	    $.ajax({
-	      url: '/new-post',
+	      url: '/discuss',
 	      type: 'POST',
 	      data: {
 	        author: this.state.author,
 	        email: this.state.email,
-	        post: this.state.body
+	        post: this.state.indpost
 	      }
 	    })
 
@@ -85,10 +101,10 @@ var Discuss = React.createClass({
 						  	<form className="formform">
 						  		<input type="text" placeholder="Enter your name..." className="nameinput" onChange={this.handleChange}/>
 						  		
-						  		<input type="text" placeholder="E-Mail address" className="emailinput" onChange={this.handleChange}/>	
+						  		<input type="text" placeholder="E-Mail address" className="emailinput" onChange={this.handleChangeEmail}/>	
 						  	
 						  		<h4><strong>Comment:</strong></h4>
-						  		<textarea type="text" onChange={this.handleChange} id="entercomment" className="expanding"/>
+						  		<textarea type="text" onChange={this.handleChangePost} id="entercomment" className="expanding"/>
 
 						  		<button className="submitbutton" onClick={this.newPost}>Submit</button>
 						  	</form>
@@ -116,7 +132,7 @@ var Discuss = React.createClass({
 						  		} 
 
 						  		<div className="postdiv">
-							  		<h3>{this.state.author}</h3>
+							  		<h3><strong>{this.state.author}</strong></h3>
 							  		<h5><em>{this.state.email}</em></h5>
 							  		<hr id="namehr" />
 							  		<h4>{this.state.indpost}</h4>

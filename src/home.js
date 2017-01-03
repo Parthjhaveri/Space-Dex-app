@@ -45,7 +45,9 @@ var Home = React.createClass({
 		return (
 			<div>
 				<div className="homediv">
-					<img src="http://www.thestoryoftexas.com/upload/images/events/movies/dark-universe-banner.jpg" className="img-responsive" role="presentation" id="mainbanner"/>
+					<div className="homedivbanner">
+						<img src="https://static.pexels.com/photos/32237/pexels-photo.jpg" className="img-responsive" role="presentation" id="mainbanner"/>
+					</div>	
 						<br />
 						<br />
 						<br />
