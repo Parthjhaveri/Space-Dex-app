@@ -1518,6 +1518,7 @@ textarea:focus {outline: none;}
   font-family: 'Roboto', sans-serif;
   overflow-y: scroll;
   border-radius: 5px;
+  height: 500px;
 }
 
 #namehr {

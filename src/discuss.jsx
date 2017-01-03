@@ -10,11 +10,9 @@ var $ = require('jquery');
 
 var Discuss = React.createClass({
 
-	//-------------- THIS CREATES A NEW POST ---------------
-
 	// GET THE INITIAL STATE
 	getInitialState() {
-		return({author: '', email: '', indpost: '', posts: []})
+		return({author: '', email: '', indpost: '', posts: [], confirmation: 'Thank you for your submission!'})
 	},
 
 	// COMPONENT DID MOUNT TO LOAD THE EXISTING POSTS FROM THE DATABASE
@@ -31,14 +29,26 @@ var Discuss = React.createClass({
 	    })
 	},
 
+	//-------------- THIS CREATES A NEW POST ---------------
+
 	// HANDLE CHANGE
 	 handleChange(input) {
-	    this.setState({author: input.target.value, email: input.target.value, indpost: input.target.value})
+	    // this.setState({author: input.target.value, email: input.target.value, indpost: input.target.value})
 	    
 	    console.log(this.state.author)
 	    console.log(this.state.email)
 	    console.log(this.state.indpost)
+
+	    // STORE THE AUTHOR, EMAIL AND INDIVIDUAL POST IN A VARIABLE	
+	    var authorName = this.state.author;
+	    var emailAddress = this.state.email;
+	    var individualPost = this.state.indpost;
+
+	    // SET THE STATE
+	    this.setState({author: authorName, email: emailAddress, indpost: individualPost})
+
 	  },
+
 
 	// SUBMIT A NEW POST
 	  newPost() {
@@ -51,6 +61,7 @@ var Discuss = React.createClass({
 	        post: this.state.body
 	      }
 	    })
+
 	  },
 
 	// THE RENDER FUNCTION
@@ -81,6 +92,8 @@ var Discuss = React.createClass({
 
 						  		<button className="submitbutton" onClick={this.newPost}>Submit</button>
 						  	</form>
+						  	<br />
+						  	<h2 className="subcon"><em>{this.state.confirmation}</em></h2>
 
 						  </div>
 
@@ -100,10 +113,11 @@ var Discuss = React.createClass({
 
 						  		{
 						  			// DYNAMIC POSTS --------------------
-						  		}
+						  		} 
 
 						  		<div className="postdiv">
-							  		<h3>{this.state.name}</h3>
+							  		<h3>{this.state.author}</h3>
+							  		<h5><em>{this.state.email}</em></h5>
 							  		<hr id="namehr" />
 							  		<h4>{this.state.indpost}</h4>
 						  		</div>
