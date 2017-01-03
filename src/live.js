@@ -167,7 +167,7 @@ var LiveEarth = React.createClass({
 						  		<p className="sstext">
 						  			The table above in conjuction with the Map
 						  			are current trajectories of where the International Space Station is 
-						  			above us in orbit. <p><em>(<strong>Credit</strong>- <a href="http://open-notify.org/Open-Notify-API/" target="_blank">Open Notify</a>)</em></p>
+						  			above us in orbit. <p><u><em>(<strong>Credit</strong>- <a href="http://open-notify.org/Open-Notify-API/" target="_blank">Open Notify</a>)</em></u></p>
 						  		</p>
 						  </div>
 
@@ -220,6 +220,78 @@ var LiveEarth = React.createClass({
 				<div className="whatisit">
 					<div className="container">
 						<center><h1>Okay, but what <strong>really</strong> is the International Space Station all about?</h1></center>
+						<center><h4><em>Source: <a href="https://www.nasa.gov/audience/forstudents/k-4/stories/nasa-knows/what-is-the-iss-k4.html" target="_blank">NASA</a></em></h4></center>
+						<center>
+						<hr id="whatishr" />
+							<p id="whatisitone">
+								<em>(This article is part of the NASA Knows! (Grades K-4) series.)</em> The International Space Station is a large spacecraft. 
+								It orbits around Earth.<br /> It is a home where astronauts live. The space station is also a science lab. Many countries 
+								worked together to build it. They also work together to use it. The space station is made of many pieces. The 
+								pieces were put together in space by astronauts. The space station's orbit is about 220 miles above Earth. NASA 
+								uses the station to learn about living and working in space. These lessons will help NASA explore space.
+							</p>
+
+							<center>
+								<div className="row">
+
+								  <div className="col-md-6" id="leftwhatis">
+								 
+								  <strong><h3>How Old Is the Space Station?</h3></strong>
+								  <hr id="whatishr" />
+								  <p className="whatispara">
+								  	The first piece of the International Space Station was launched in 1998. A Russian rocket launched that piece. 
+								  	After that, more pieces were added. Two years later, the station was ready for people. The first crew arrived 
+								  	on November 2, 2000. People have lived on the space station ever since. Over time more pieces have been added. 
+								  	NASA and its partners around the world finished the space station in 2011.
+ 								  </p>
+
+								  <strong><h3>What Are the Parts of the Space Station?</h3></strong>
+								  <hr id="whatishr" />
+								  <p className="whatispara">
+								  	The space station has many parts. The parts are called modules. The first modules had parts needed to make the 
+								  	space station work. Astronauts also lived in those modules. Modules called "nodes" connect parts of the station 
+								  	to each other. Labs on the space station let astronauts do research. On the sides of the space station are 
+								  	solar arrays. These arrays collect energy from the sun. They turn sunlight into electricity. Robot arms are 
+								  	attached outside. The robot arms helped to build the space station. They also can move astronauts around 
+								  	outside and control science experiments. Airlocks on the space station are like doors. Astronauts use them to 
+								  	go outside on spacewalks. Docking ports are like doors, too. The ports allow visiting spacecraft to connect 
+								  	to the space station. New crews and visitors enter the station through the docking ports. Astronauts fly to 
+								  	the space station on the Russian Soyuz. The crew members use the ports to move supplies onto the station.
+ 								  </p> 	
+
+								  </div>
+
+								  <div className="col-md-6" id="rightwhatis">
+
+								  <strong><h3>How Big Is the Space Station?</h3></strong>
+								  <hr id="whatishr" />
+								  <p className="whatispara">
+								  	The space station is as big inside as a house with five bedrooms. It has two bathrooms, a gymnasium and a big 
+								  	bay window. Six people are able to live there. It weighs almost a million pounds. It is big enough to cover a 
+								  	football field including the end zones. It has science labs from the United States, Russia, Japan and Europe.
+ 								  </p>
+
+								  <strong><h3 id="whyisimportant">Why Is the Space Station Important?</h3></strong>
+								  <hr id="whatishr" />
+								  <p className="whatispara">
+									The space station is a home in orbit. People have lived in space every day since the year 2000. The space 
+									station's labs are where crew members do research. This research could not be done on Earth. Scientists study 
+									what happens to people when they live in space. NASA has learned how to keep a spacecraft working for a long 
+									time. These lessons will be important in the future. NASA has a plan to send humans deeper into space than ever 
+									before. The space station is one of the first steps. NASA will use lessons from the space station to get 
+									astronauts ready for the journey ahead.
+ 								  </p> 
+ 								  <br />
+ 								  <blockquote>
+ 								  	<h4>Info source: <a href="https://www.nasa.gov/audience/forstudents/k-4/stories/nasa-knows/what-is-the-iss-k4.html" target="_blank">NASA</a></h4>
+ 								  </blockquote>
+
+								  </div>
+
+								</div>
+							</center>
+
+						</center>
 					</div>
 				</div>
 

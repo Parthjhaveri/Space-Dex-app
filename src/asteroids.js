@@ -262,7 +262,8 @@ var Asteroids = React.createClass({
 						  		Tens of thousands of these minor planets are gathered in the main asteroid belt, a vast doughnut-shaped
 						  		ring between the orbits of Mars and Jupiter. Asteroids that pass close to Earth are called near-earth objects.
 						  	</h4>
-						  	<img src="https://static1.squarespace.com/static/56eddde762cd9413e151ac92/t/570cb8aa5bd33022b93a2441/1460466816134/asteroidmining.jpg" className="img-responsive" role="presentation" id="asteroidpicone"/>
+						  	<img src="http://i.dailymail.co.uk/i/pix/2011/07/25/article-2018477-0D208ED300000578-337_634x598.jpg" className="img-responsive" role="presentation" id="asteroidpicone"/>
+						  	<p><em><a href="http://www.dailymail.co.uk/ushome/index.html" target="_blank">Photo Credit- DailyMail.Co.Uk</a></em></p>
 						  </div>
 
 						  <div className="col-md-6" id="rightboxdata">
