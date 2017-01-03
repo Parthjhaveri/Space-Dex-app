@@ -1,10 +1,10 @@
 html, body {
   overflow-x: hidden;
-  background-image: url(http://wallgallery.org/wp-content/uploads/2016/05/Mars-free-wallpapers.jpg);
+/*  background-image: url(https://static.pexels.com/photos/24023/pexels-photo-24023.jpg);
   background-size: 100%;
   background-position: center top;
   background-attachment: fixed;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat;*/
 }
 
 /* ------------------------------------------------------------------------------------------------------------- */
@@ -614,9 +614,9 @@ input:focus {outline: none;}
   height: 300px;
   overflow-x: hidden;
   margin-top: 30px;
-  background-image: url(http://www.popsci.com/sites/popsci.com/files/styles/large_1x_/public/rtx1b5ct.jpg?itok=_8RXaNW1);
+  background-image: url(https://static.pexels.com/photos/23789/pexels-photo.jpg);
   background-size: 100%;
-  background-position: center top;
+  background-position: center center;
   background-attachment: fixed;
   background-repeat: no-repeat;
   border-radius: 100px;
@@ -658,7 +658,7 @@ input:focus {outline: none;}
 .marspicdiv{
   width: auto;
   height: 300px;
-  background-image: url(http://wallgallery.org/wp-content/uploads/2016/05/Mars-free-wallpapers.jpg);
+  background-image: url(https://static.pexels.com/photos/24023/pexels-photo-24023.jpg);
   background-size: 100%;
   background-position: center top;
   background-attachment: fixed;
