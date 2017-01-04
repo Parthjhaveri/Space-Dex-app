@@ -263,7 +263,7 @@ var Asteroids = React.createClass({
 						  		ring between the orbits of Mars and Jupiter. Asteroids that pass close to Earth are called near-earth objects.
 						  	</h4>
 						  	<img src="http://i.dailymail.co.uk/i/pix/2011/07/25/article-2018477-0D208ED300000578-337_634x598.jpg" className="img-responsive" role="presentation" id="asteroidpicone"/>
-						  	<p><em><a href="http://www.dailymail.co.uk/ushome/index.html" target="_blank">Photo Credit- DailyMail.Co.Uk</a></em></p>
+						  	<p><em><a href="http://www.dailymail.co.uk/ushome/index.html" target="_blank">Photo Credit- DailyMail.Co.UK</a></em></p>
 						  </div>
 
 						  <div className="col-md-6" id="rightboxdata">
