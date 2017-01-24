@@ -190,6 +190,14 @@ var Asteroids = React.createClass({
 	render: function() {
 		return (
 		<div>
+
+			<div className="astBanner"> 
+				{
+					// style={{width: '100vw', height: '100vh'}} data-vide-bg={require("https://www.youtube.com/watch?v=Jzyugh0dXRc")} data-vide-options=" position: 0% 0%" autoplay
+				}
+
+			</div>
+
 			<div className="homediv">			
 				<div className="planetsdiv">
 					<center><h1>Search for Asteroids</h1></center>
