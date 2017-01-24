@@ -152,7 +152,7 @@ html, body {
   width: auto;
   height: 700px;
   background-color: black;
-  background-image: url(https://www.nasa.gov/images/content/717846main_pia16610_full.jpg);
+  background-image: url(http://i.huffpost.com/gen/1626279/images/o-ASTEROID-EARTH-facebook.jpg);
   background-position: center center;
   background-size: 100%;
   background-repeat: no-repeat;
@@ -160,7 +160,22 @@ html, body {
   padding-bottom: 10%;
   font-family: 'Roboto', sans-serif;
   color: white;
+  font-weight: bolder;
 }
+
+#neo {
+  font-size: 50px;
+}
+
+#spanarrow {
+  font-size: 50px;
+  margin-top: 20%;
+}
+
+/*.neotag {
+  background-color: #1a1a1a;
+  opacity: 0.8;
+}*/
 
 @media screen and (max-width: 900px) {
     

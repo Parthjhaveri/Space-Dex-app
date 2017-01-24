@@ -195,8 +195,8 @@ var Asteroids = React.createClass({
 
 			<div className="astBanner">
 
-				<center><h1>Near-Earth Asteroids look up</h1></center>
-
+				<center><p id="neo"><span className="neotag">Near-Earth Asteroids look up</span></p></center>
+				<center><h1><span className="glyphicon glyphicon-menu-down" id="spanarrow"></span></h1></center>
 			</div>
 
 			<div className="homediv">			
