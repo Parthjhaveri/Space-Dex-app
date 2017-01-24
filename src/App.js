@@ -12,6 +12,7 @@ import Sounds from './sounds.js';
 import Footer from './footer.js';
 import Searchbox from './search.jsx';
 import Discuss from './discuss.jsx';
+import ReactVideo from 'react.video';
 
 import { IndexRoute,Link, Router, Route, browserHistory } from 'react-router';
 var $ = require('jquery');

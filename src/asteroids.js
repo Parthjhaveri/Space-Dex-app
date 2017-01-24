@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom';
 import 'bootstrap/dist/css/bootstrap.css';
 import CSS from './App.css';
 import { IndexRoute,Link, Router, Route, browserHistory } from 'react-router';
+import ReactVideo from 'react.video';
 var $ = require('jquery');
 /* eslint-disable */
 
@@ -11,7 +12,7 @@ var $ = require('jquery');
 var Asteroids = React.createClass({
 	// GET THE INITIAL STATE
 	getInitialState() {
-		return({asteroid: [], roverPics: [], thisAsteroidName: null, diameter: null, perSecond: null, info: '', astSpeed: null, missDist: null})		
+		return({source: [], asteroid: [], roverPics: [], thisAsteroidName: null, diameter: null, perSecond: null, info: '', astSpeed: null, missDist: null})		
 	},
 
 	// COMPONENT WILL MOUNT 
@@ -23,7 +24,7 @@ var Asteroids = React.createClass({
 
 	// THIS IS WHAT ACTUALLY LOADS THE INFORMATION ONTO THE PAGE
 	componentDidMount(event) {
-		
+		 
 		// MY API KEY
 		var myApi = '0VpXFz5QIP7qNCpCCatEfjMKVhIjc50aGD622Wti';
 		var that = this;
@@ -186,15 +187,15 @@ var Asteroids = React.createClass({
 
 	},
 
+
 	// THE RENDER FUNCTION
 	render: function() {
 		return (
 		<div>
 
-			<div className="astBanner"> 
-				{
-					// style={{width: '100vw', height: '100vh'}} data-vide-bg={require("https://www.youtube.com/watch?v=Jzyugh0dXRc")} data-vide-options=" position: 0% 0%" autoplay
-				}
+			<div className="astBanner">
+
+				<center><h1>Near-Earth Asteroids look up</h1></center>
 
 			</div>
 
