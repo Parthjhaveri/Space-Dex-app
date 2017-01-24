@@ -196,6 +196,7 @@ var Asteroids = React.createClass({
 			<div className="astBanner">
 
 				<center><p id="neo"><span className="neotag">Near-Earth Asteroids look up</span></p></center>
+				<center><hr id="searchasthr" /></center>
 				<center><h1><span className="glyphicon glyphicon-menu-down" id="spanarrow"></span></h1></center>
 			</div>
 
@@ -299,6 +300,13 @@ var Asteroids = React.createClass({
 					</div>
 			  	</center>
 		  </div>
+
+		  {
+		  	// ASTERANK 3D INTERACTIVE IFRAME
+		  }
+
+		  <iframe src="http://www.asterank.com/3d/" className="asterank">
+		  </iframe>
 
 		</div>
 		)

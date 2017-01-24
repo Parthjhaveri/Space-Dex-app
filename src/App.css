@@ -156,6 +156,7 @@ html, body {
   background-position: center center;
   background-size: 100%;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   padding-top: 20%;
   padding-bottom: 10%;
   font-family: 'Roboto', sans-serif;
@@ -169,7 +170,20 @@ html, body {
 
 #spanarrow {
   font-size: 50px;
-  margin-top: 20%;
+  margin-top: 18%;
+}
+
+.asterank {
+  width: 100%;
+  height: 700px;
+  border: 2px solid black;
+}
+
+#searchasthr {
+  width: 70%;
+  border-width: 2px;
+  border-color: red;
+
 }
 
 /*.neotag {
