@@ -168,7 +168,7 @@ html, body {
   width: auto;
   height: auto;
   background-color: #af0a0a;
-  padding-top: 80px;
+  padding-top: 60px;
   padding-bottom: 80px;
   font-family: 'Roboto', sans-serif;
   color: white;
@@ -504,7 +504,8 @@ a:active {
 .planetsdiv {
   width: auto;
   height: auto;
-  padding-top: 100px;
+  padding-top: 50px;
+  padding-bottom: 20px;
 }
 
 .planetsearch {
@@ -632,7 +633,7 @@ input:focus {outline: none;}
 
 #whatareast {
   font-family: 'Roboto', sans-serif;
-  margin-top: 20px;
+  margin-top: 50px;
   color: silver;
 }
 
