@@ -164,6 +164,26 @@ html, body {
   font-weight: bolder;
 }
 
+.redbanner {
+  width: auto;
+  height: auto;
+  background-color: #af0a0a;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  font-size: 40px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+#asthr {
+  width: 38%;
+  border-width: 1px;
+  border-color: white;
+  float: left;
+}
+
 #neo {
   font-size: 50px;
 }

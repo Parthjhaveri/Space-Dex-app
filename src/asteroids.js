@@ -305,6 +305,11 @@ var Asteroids = React.createClass({
 		  	// ASTERANK 3D INTERACTIVE IFRAME
 		  }
 
+		  <div className="redbanner">
+		  	<p>Asterank 3D Asteroid map</p>
+		  	<hr id="asthr" />
+		  </div>
+
 		  <iframe src="http://www.asterank.com/3d/" className="asterank">
 		  </iframe>
 
