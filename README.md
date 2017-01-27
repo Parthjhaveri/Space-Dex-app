@@ -1,3 +1,5 @@
+#### (Please scroll to 100% zoom size before download/ render)
+
 # SpaceDex
 ---
 ## Built using React JS
