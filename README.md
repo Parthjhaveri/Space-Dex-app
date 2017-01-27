@@ -1,4 +1,4 @@
-#### (Please scroll to 100% zoom size before download/ render)
+#### (Best rendered at 100% zoom size on Macs- Thank you!)
 
 # SpaceDex
 ---
