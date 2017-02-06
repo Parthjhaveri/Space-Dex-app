@@ -10,13 +10,16 @@
 - Track information on Asteroids that are currently orbiting the Earth (Links to JPL individual Asteroid profiles included)
 - Rare pictures from the Mars Rovers (Spirit, Opportunity and Curiosity)
 - Astronomy Picture of the Day (APOD API)
-- Live video feed directly from the International Space Station
+- Live Geo-Map tracking International Space Station
 
 ## Front-End
 - React JS
 
 ## Back-End
 - Simple React Setup
+
+## APIs
+- NASA Data Portal
 
 ---
 ## Courtesy of:
