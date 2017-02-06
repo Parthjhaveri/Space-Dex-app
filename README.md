@@ -12,6 +12,9 @@
 - Astronomy Picture of the Day (APOD API)
 - Live video feed directly from the International Space Station
 
+## Front-End
+- React JS
+
 ---
 ## Courtesy of:
 ### The National Aeronautics and Space Administration
